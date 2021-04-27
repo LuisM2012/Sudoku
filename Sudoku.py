@@ -69,7 +69,7 @@ class Sudoku:  # Game class
                         self.onClick()
                     else:
                         self.clicked = None
-                    continue
+                   
 
                 if event.type == pygame.KEYDOWN:
 
@@ -77,7 +77,6 @@ class Sudoku:  # Game class
                         self.board.board = self.board.solution
                         self.paused = True
                         self.solved = True
-                        continue
                     
                     if event.key == pygame.K_TAB:
                         self.reset_game()
@@ -85,24 +84,18 @@ class Sudoku:  # Game class
 
                     if event.key == pygame.K_s:
                         self.print_solution()
-                        continue
 
                     if event.key == pygame.K_p:
                         self.print_board()
-                        continue
                     
                     if self.clicked is None: #bottom can only be called when there's a clicked slot
                         continue
 
                     if event.key == pygame.K_RETURN:
-                        self.valueInput()
-                        continue                    
+                        self.valueInput()                   
                     
-                    # print(event.key, ":", pygame.K_DELETE)
-                    # print(pygame.key.key_code("delete"))
                     if event.key == pygame.K_DELETE or event.key == 8:
                         self.delInput()
-                        continue
 
                     if event.key == pygame.K_UP:
                         match = self.board[position[1]][position[0]]
