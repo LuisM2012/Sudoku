@@ -2,7 +2,7 @@
 Two file system for a sudoku game with solver.
 
 
-You must hae Pygame installed to initiate the game.
+You must have Pygame installed to initiate the game.
 In order to start game, run the Sudoku.py file.
 The S2.py file has needed module for the game to work.
 
@@ -39,6 +39,9 @@ BACKSPACE key.
 
 To unclick slot, click outside of board or press
 ENTER/RETURN key.
+
+DISCLAIMER: No known bugs have been found. If you encounter one,
+please send me an email at luismorales062012@gmail.com
 
 You now have the needed information to play the game.
 
